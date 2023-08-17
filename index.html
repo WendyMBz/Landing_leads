@@ -18,13 +18,12 @@
          */
         var config = {
             fields: {
-                "Subject": "#subject-field", // Case subject
                 "Email": "#email-field", // Visitor's email
                 "Name": "#name-field", // Visitor's name code
                 "Phone": "#phone-field", // Visitor's phone number
             },
             customFields: {},
-            landingId: "4eeadeb6-6372-4119-b07e-cc60d9b5c193",
+            landingId: "b01bbbaa-4dfa-4fd5-b464-9a72ff671bac",
             serviceUrl: "https://cococo.creatio.com/0/ServiceModel/GeneratedObjectWebFormService.svc/SaveWebFormObjectData",
             redirectUrl: "",
             onSuccess: function (response) {
@@ -65,8 +64,6 @@
                 <h2>Case form</h2>
                 <form class="mainForm  formulario flex flex--column" name="landingForm"
                     onSubmit="createObject(); return false">
-                    Asunto:<br>
-                    <input type="text" name="subject" id="subject-field" class="input"><br>
                     Email:<br>
                     <input type="email" name="Email" id="email-field" class="input"><br>
                     Nombre:<br>
@@ -79,8 +76,6 @@
             </div>
         </section>
     </main>
-    </main>
-
 </body>
 
 </html>
